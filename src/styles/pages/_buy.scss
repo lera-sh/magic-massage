@@ -1,0 +1,358 @@
+.buy-advantages {
+    @include display(center, $main-dark, flex, row, space-between, 24px 60px 24px 94px);
+
+    @media screen and (max-width: $laptop-width) {
+        padding: 24px 30px 24px 70px;
+    }
+
+    @media screen and (max-width: $small-laptop-width) {
+        padding: 24px 20px 24px 40px;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        padding: 11px 20px;
+    }
+}
+
+.advantage-item {
+    @include display(center, none, flex, row, space-between, 0);
+
+    @media screen and (max-width: $smallest-width) {
+        flex-direction: column;
+
+        &:last-child {
+            display: none;
+        }
+    }
+}
+
+.advantage-img-container {
+    border-radius: 50%;
+    background-color: $font-light;
+    padding: 8px 10px;
+
+    @media screen and (max-width: $smallest-width) {
+        padding: 5px 7px;
+    }
+}
+
+.advantage-img {
+    @media screen and (max-width: $smallest-width) {
+        width: 23px;
+    }
+}
+
+.advantage-text {
+    padding-left: 16px;
+    text-transform: uppercase;
+    @include font($font-light, 16px, 800, 30px);
+
+    @media screen and (max-width: $laptop-width) {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    @media screen and (max-width: $small-laptop-width) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+.offer-section {
+    background: linear-gradient(118.72deg, #AECCFF -18.14%, #197AFF 165.34%);
+    padding: 30px 0 55px;
+}
+
+.offer-titles {
+    @include display(center, none, flex, column, space-between, 0 0 50px 0);
+}
+
+.buy-title {
+    @include font(none, 37px, 700, 49px);
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 30px;
+        line-height: 39px;
+        text-align: center;
+    }
+}
+
+.dark-title {
+    color: $main-dark;
+}
+
+.light-title {
+    color: $font-light;
+}
+
+.massager-cards {
+    z-index: 1;
+    @include display(flex-start, none, flex, row, space-between, 0 120px);
+
+    @media screen and (max-width: $laptop-width) {
+        padding: 0 70px;
+    }
+
+    @media screen and (max-width: $small-laptop-width) {
+        padding: 0 40px;
+    }
+    @media screen and (max-width: $additional-laptop) {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        padding: 0 20px;
+    }
+}
+
+.buy-card {
+    border: 1.5px solid $main-light;
+    border-radius: 18px;
+    position: relative;
+    z-index: 0;
+    @include display(center, $header-background, flex, column, space-between, 0 10px 24px);
+
+    &:nth-child(2n) {
+        background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%);
+        box-shadow: 0px 4px 84px #3D5E95;
+    }
+
+    @media screen and (max-width: $additional-laptop) {
+        margin-bottom: 70px;
+
+        &:first-child {
+            margin-bottom: 0;
+            order: 2;
+        }
+
+        &:nth-child(2n) {
+            order: 0;
+        }
+
+        &:last-child {
+            order: 1;
+        }
+    }
+}
+
+.card-img {
+    position: absolute;
+    top: -16px;
+}
+
+.img-one {
+    width: 133px;
+}
+
+.card-arrow {
+    position: absolute;
+    right: 20px;
+    transform: rotate(71.25deg);
+    top: 66px;
+}
+
+.card-flag {
+    border-radius: 50px;
+    margin-top: 110px;
+    padding: 2px 16px 0;
+    text-transform: uppercase;
+    @include font($font-light, 12px, 700, 26px);
+}
+
+.popular {
+    background-color: $dark-green;
+}
+
+.value {
+    background-color: $rose-color;
+}
+
+.card-title {
+    @include font($main-dark, 30px, 700, 40px);
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.gift {
+    color: $main-light;
+}
+
+.one-title {
+    padding-top: 150px;
+
+    @media screen and (max-width: $smallest-width) {
+        padding-top: 110px;
+    }
+}
+
+.some-title {
+    padding-top: 10px;
+}
+
+.gift-underline {
+    position: absolute;
+    right: 57px;
+    top: 183px;
+    width: 139px;
+
+    @media screen and (max-width: $smallest-width) {
+        top: 180px;
+    }
+}
+
+.price-section {
+    @include display(flex-start, none, flex, row, space-between, 17px 0 11px);
+}
+
+.card-price {
+    @include font($main-dark, 32px, 900, 43px);
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.one-price {
+    padding-top: 17px;
+}
+
+.new-price {
+    text-align: center;
+}
+
+.old-price {
+    color: $light-grey;
+    padding-left: 20px;
+    text-decoration: line-through;
+}
+
+.free-shipping {
+    @include font($main-dark, 13px, 700, 16px);
+}
+
+.money-back {
+    @include display(center, none, flex, row, space-between, 10px 15px);
+
+    @media screen and (max-width: $smallest-width) {
+        padding: 10px;
+    }
+}
+
+.one-money-back {
+    padding: 28px 0 37px;
+
+    @media screen and (max-width: $smallest-width) {
+        padding: 20px 0;
+    }
+}
+
+.money-back-img {
+    padding-right: 8px;
+}
+
+.money-back-text {
+    @include font($main-dark, 12px, 700, 15px);
+}
+
+.installments {
+    @include display(baseline, none, flex, row, space-between, 0 0 17px 0);
+}
+
+.one-installments {
+    padding-bottom: 47px;
+
+    @media screen and (max-width: $smallest-width) {
+        padding-bottom: 23px;
+    }
+}
+
+.installments-text {
+    padding-right: 6px;
+    @include font($main-dark, 12px, 700, 16px);
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 11px;
+        line-height: 13px;
+    }
+}
+
+.installment-price {
+    font-weight: 900;
+}
+
+.afterpay {
+    border-radius: 40px;
+    @include display(center, $afterpay-color, flex, row, space-between, 2px 13px);
+}
+
+.afterpay-text {
+    @include font($font-dark, 12px, 700, 16px);
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 11px;
+        line-height: 13px;
+    }
+}
+
+.additional-info {
+    border: 1px solid #AECCFF;
+    border-top: none;
+    border-radius: 25px;
+    margin-bottom: 22px;
+    @include display(center, none, flex, column, space-between, 0);
+}
+
+.benefit {
+    background-color: $background-light;
+    border: 1px solid #AECCFF;
+    border-radius: 88px;
+    @include display(center, none, flex, row, space-between, 0);
+}
+
+.save {
+    background-color: $light-green;
+    border-right: 1px solid #AECCFF;
+    border-radius: 88px;
+    padding: 16px 12px 14px 22px;
+    @include font($main-dark, 12px, 700, 15px);
+
+    @media screen and (max-width: $smallest-width) {
+        padding: 16px 10px 14px 20px;
+    }
+}
+
+.orders {
+    @include display(center, none, flex, row, space-between, 11px 0 14px);
+}
+
+.orders-img {
+    padding-right: 12px;
+}
+
+.orders-text {
+    @include font($main-dark, 13px, 800, 17px);
+}
+
+.payment-methods {
+    @include display(center, none, flex, row, space-between, 0);
+}
+
+.payment-item {
+    list-style: none;
+    padding-right: 15px;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}

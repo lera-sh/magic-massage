@@ -1,0 +1,141 @@
+.faq-section {
+    background-color: $main-dark;
+    padding: 34px 128px 70px 100px;
+
+    @media screen and (max-width: $laptop-width) {
+        padding: 34px 70px 70px;
+    }
+
+    @media screen and (max-width: $small-laptop-width) {
+        padding: 34px 40px 50px;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        padding: 25px 20px;
+    }
+}
+
+.faq-title-container {
+    @include display(center, none, flex, column, center, 0 0 53px);
+
+    @media screen and (max-width: $additional-laptop) {
+        padding-bottom: 40px;
+    }
+}
+
+.faq-title {
+    @include font($font-light, 37px, 300, 49px);
+
+    @media screen and (max-width: $additional-laptop) {
+        text-align: center;
+    }
+}
+
+.faq-highlighted {
+    font-weight: 900;
+}
+
+.faq-underline {
+    align-self: flex-end;
+    padding-right: 330px;
+    width: 226px;
+
+    @media screen and (max-width: $additional-laptop) {
+        align-self: center;
+        padding-right: 0;
+    }
+}
+
+.faq-img {
+    padding-right: 84px;
+
+    @media screen and (max-width: $laptop-width) {
+        width: 430px;
+    }
+
+    @media screen and (max-width: $small-laptop-width) {
+        padding-right: 60px;
+        padding-top: 3px;
+        width: 390px;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        border-radius: 10px;
+        height: 194px;
+        object-fit: cover;
+        object-position: top;
+        padding: 0;
+        width: 370px;
+    }
+}
+
+.faq-content {
+    @include display(flex-start, none, flex, row, space-between, 0);
+
+    @media screen and (max-width: $additional-laptop) {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.faq-container {
+    width: 100%;
+
+    @media screen and (max-width: $additional-laptop) {
+        margin-top: 25px;
+    }
+}
+
+.qa-container {
+    border: 1px solid $border-faq;
+    border-radius: 9px;
+    margin-bottom: 16px;
+}
+
+.question-container {
+    border-radius: 7px;
+    @include display(center, $background-faq, flex, row, space-between, 17px 40px 17px 30px);
+}
+
+.question {
+    @include font($font-light, 16px, 700, 20px);
+}
+
+.question-arrow {
+    padding: 6px;
+    cursor: pointer;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.answer-container {
+    display: none;
+}
+
+.block {
+    display: block;
+    padding: 22px 10px 20px 30px;
+}
+
+.answer {
+    @include font($font-light, 14px, 600, 20px);
+}
+
+.more-qa {
+    @include display(center, none, flex, row, flex-start, 10px 0 0);
+
+    @media screen and (max-width: $additional-laptop) {
+        justify-content: center;
+    }
+}
+
+.more-qa-text {
+    padding-right: 12px;
+    @include font($font-light, 16px, 700, 20px);
+}
+
+.more-qa-img {
+    cursor: pointer;
+}

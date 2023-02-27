@@ -1,0 +1,5 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: $big-laptop-width;
+    @include display(none, none, flex, column, center, 0);
+}

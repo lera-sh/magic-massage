@@ -1,0 +1,25 @@
+@mixin button($color, $border, $radius, $padding) {
+    background-color: $color;
+    border: $border;
+    border-radius: $radius;
+    cursor: $cursor;
+    padding: $padding;
+    transition: $transition
+}
+
+@mixin display($align, $color, $display, $direction, $justify, $padding) {
+    align-items: $align;
+    background-color: $color;
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    padding: $padding;
+}
+
+@mixin font($color, $size, $weight, $height) {
+    color: $color;
+    font-family: $font-family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}

@@ -1,0 +1,35 @@
+.navbar {
+    @include display(center, none, flex, row, space-between, 0);
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        display: none;
+    }
+}
+
+.nav-item {
+    cursor: pointer;
+    list-style: none;
+    padding-right: 60px;
+    transition: color .3s;
+    @include font($main-dark, 16px, 300, 21px);
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.nav-link {
+    color: $main-dark;
+
+    &:hover {
+        color: rgba(17, 52, 111, .6);
+    }
+
+    &:active {
+        color: $main-dark;
+    }
+}
+
+.active {
+    font-weight: 900;
+}
