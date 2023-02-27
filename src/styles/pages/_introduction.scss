@@ -1,0 +1,308 @@
+.intro-section {
+    @include display(none, $background-light, block, none, none, 155px 100px 35px 82px);
+
+    @media screen and (max-width: $laptop-width) {
+        padding: 155px 50px 35px 70px;
+    }
+
+    @media screen and (max-width: $small-laptop-width) {
+        padding: 125px 40px 35px;
+    }
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        background-color: $header-background;
+        padding: 100px 40px 35px;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        padding: 100px 20px 28px;
+    }
+}
+
+.intro-title-section {
+    @include display(center, none, flex, row, none, 0);
+
+    @media screen and (max-width: $additional-laptop) {
+        padding-right: 200px;
+    }
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+.intro-title {
+    @include display(flex-end, none, flex, column, none, 15px 0 16px 0);
+
+    @media screen and (max-width: $additional-laptop) {
+        align-items: center;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        align-items: flex-start;
+    }
+}
+
+.intro-title-text {
+    padding-right: 10px;
+    @include font($main-dark, 42px, 500, 55px);
+
+    @media screen and (max-width: $additional-laptop) {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        text-align: left;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
+.intro-underline {
+    @media screen and (max-width: $smallest-width) {
+        width: 100px;
+    }
+}
+
+.intro-title-highlighted {
+    color: $main-light;
+    font-weight: 900;
+    padding-bottom: 3px;
+}
+
+.intro-arrow {
+    @media screen and (max-width: $additional-laptop) {
+        transform: rotate(45deg);
+        width: 100px;
+    }
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        padding-bottom: 100px;
+        transform: rotate(180deg);
+        transform: scale(1, -1);
+    }
+}
+
+.small-massagers {
+    display: none;
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        display: block;
+        width: 300px;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        width: 150px;
+    }
+}
+
+.intro-content {
+    @include display(center, none, flex, row, space-between, 0);
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.intro-primary {
+    @include display(flex-start, none, flex, column, none, 0 50px 0 0);
+
+    @media screen and (max-width: $additional-laptop) {
+        align-items: center;
+        padding: 0;
+    }
+}
+
+.intro-text {
+    padding-bottom: 30px;
+    width: 80%;
+    @include font($dark-grey, 18px, 500, 28px);
+
+    @media screen and (max-width: $additional-laptop) {
+        text-align: center;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 14px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+}
+
+.intro-none {
+    @media screen and (max-width: $smallest-width) {
+        display: none;
+    }
+}
+
+.intro-instruction {
+    background: rgba(174, 204, 255, 0.1);
+    border: 1px solid $border-intro;
+    border-radius: 10px;
+    margin-bottom: 52px;
+    @include display(center, none, flex, row, space-between, 0);
+
+    @media screen and (max-width: $additional-laptop) {
+        background: none;
+        border: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.instruction-card {
+    border-right: 1px solid $border-intro;
+    margin: 16px 0 22px 15px;
+    @include display(center, none, flex, column, center, 0 15px);
+
+    &:last-child {
+        border: none;
+    }
+
+    @media screen and (max-width: $laptop-width) {
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: $small-laptop-width) {
+        padding: 0 10px;
+    }
+
+    @media screen and (max-width: $additional-laptop) {
+        border: 0;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        margin: 0;
+    }
+}
+
+.instruction-title {
+    padding: 15px 0 3px;
+    text-align: center;
+    @include font($main-dark, 14px, 80, 20px);
+}
+
+.instructions {
+    @media screen and (max-width: $additional-laptop) {
+        display: none;
+    }
+}
+
+.instruction-description {
+    text-align: center;
+    @include font($dark-grey, 12px, 600, 20px);
+
+    @media screen and (max-width: $small-laptop-width) {
+        list-style: none;
+        font-style: italic;
+    }
+}
+
+.intro-buttons-section {
+    @include display(center, none, flex, column, center, 0);
+}
+
+.intro-price {
+    @include font($main-light, 15px, 700, 14px);
+}
+
+.intro-secondary {
+    padding-top: 20px;
+
+    @media screen and (max-width: $small-laptop-width) {
+        padding-top: 0;
+    }
+}
+
+.intro-img {
+    @media screen and (max-width: $small-laptop-width) {
+        width: 320px;
+    }
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        display: none;
+    }
+}
+
+.intro-review {
+    border: 1px solid $border-intro;
+    border-radius: 110px;
+    margin-top: 90px;
+    @include display(center, none, flex, row, center, 13px 32px 10px 11px);
+
+    @media screen and (max-width: $additional-laptop) {
+        border-radius: 90px;
+        padding: 10px;
+    }
+
+    @media screen and (max-width: $additional-laptop) {
+        margin-top: 16px;
+        width: 380px;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        width: 350px;
+    }
+}
+
+.intro-review-img {
+    width: 64px;
+
+    @media screen and (max-width: $additional-laptop) {
+        width: 50px;
+    }
+}
+
+.intro-review-description {
+    padding-left: 16px;
+
+    @media screen and (max-width: $additional-laptop) {
+        padding-left: 10px;
+    }
+}
+
+.intro-review-text {
+    @include font($dark-grey, 12px, 700, 17px);
+}
+
+.intro-review-grade {
+    @include display(center, none, flex, row, flex-start, 7px 0 0);
+
+    @media screen and (max-width: $additional-laptop) {
+        justify-content: space-between;
+    }
+}
+
+.intro-review-author {
+    padding: 0 25px 0 5px;
+    @include font($light-grey, 12px, 600, 17px);
+
+    @media screen and (max-width: $additional-laptop) {
+        padding: 0 10px 0 0;
+    }
+}
+
+.img-verification {
+    @media screen and (max-width: $additional-laptop) {
+        padding-left: 20px;
+    }
+}
+
+.verification-text {
+    padding-left: 5px;
+    text-transform: uppercase;
+    @include font($main-light, 11px, 800, 15px);
+
+    @media screen and (max-width: $additional-laptop) {
+        padding-left: 0;
+    }
+
+    @media screen and (max-width: $additional-laptop) {
+        padding-right: 10px;
+    }
+}

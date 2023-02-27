@@ -1,0 +1,52 @@
+.header-button {
+    text-transform: uppercase;
+    @include button($main-light, none, 60px, 11px 38px);
+    @include font($font-light, 14px, 800, 19px);
+
+    &:hover {
+        background-color: #5ea2ff
+    }
+
+    @media screen and (max-width: $tablet-mobile-width) {
+        display: none;
+    }
+}
+
+.intro-button {
+    margin-bottom: 18px;
+    @include button($main-light, none, 60px, 19px 57px);
+    @include font($font-light, 18px, 800, 24px);
+
+    &:hover {
+        background-color: #5ea2ff;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 16px;
+    }
+}
+
+.intro-price-button {
+    @include button(#4D91CF26, none, 30px, 8px 28px);
+    @include font($font-dark, 15px, 500, 24px);
+
+    &:hover {
+        background-color: #cadef1;
+    }
+}
+
+.card-button {
+    box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+    margin-bottom: 21px;
+    text-transform: uppercase;
+    @include button($main-light, none, 60px, 15px 85px);
+    @include font($font-light, 18px, 800, 24px);
+
+    &:hover {
+        background-color: #5ea2ff;
+    }
+
+    @media screen and (max-width: $smallest-width) {
+        font-size: 16px;
+    }
+}
